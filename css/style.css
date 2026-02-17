@@ -8,38 +8,47 @@
 body{
     font-family: Open Sans;
     font-weight: 400;
-    
+
 }
 
 header{
+    display: flex;
     justify-content: space-between;
     font-family: Poppins;
     font-weight: 700;
-    display: flex;
+
     justify-content: space-between; 
     align-items: center; 
-    padding: 40px 80px;
+    padding: 10px;
+    margin: 5px;
 }
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 2em;
+    margin: 5px;
 }
 
 .top{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2em;
+    margin: 5px;
 }
 .top > h1{
     font-size: xx-large;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 .top > div{
-    max-width: 500px;
-    margin-bottom: 2rem;
+    max-width: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+
 }
 button{
     font-family: Poppins;
@@ -58,90 +67,82 @@ button.secondary{
     border: 1px solid;
 }
 
-.number{
-  font-size: 64px;       /* Tamaño grande para el número */
-  font-weight: 800;       /* Grosor extra negrita */
-  color: #001f2d;        /* Un tono azul oscuro casi negro */
-  line-height: 1;         /* Evita espacios extra arriba/abajo */
-  letter-spacing: -1px;  /* Junta un poco los números para ese look moderno */
-}
-
 .static-card{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   padding: 2em;
-  margin-top: 2em;
+  
 }
 .static-card > div{
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    text-align: left;
+    align-items: center; 
+    text-align: center;
+    
 }
+.number{
+  font-size: 64px;     
+  font-weight: 800;    
+  color: #001f2d;     
+  line-height: 1;
+  letter-spacing: 1px;  
+}
+
 .grow{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 5px;
+  column-gap: 2em;
   
 }
 .grow div{
     text-align: left;
-    width: 50%;
-    padding: 0 2em;
+    flex: 1;
+    padding: 10px ;
 }
-.grow > img{
-    width: 50%;
-}
-.grow >div >b{
-    display: block;
-    margin-bottom: 15px;
+
+.title{
+    margin:  15px 0;
     font-size: xx-large;
 }
 
 .flowing{
   display: flex;
-  flex-direction: row;
   flex-direction: row-reverse;
   align-items: center;
-  margin-top: 2em;
+  column-gap: 2em;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 5px;
+  margin: 5px;
 }
 .flowing > div{
   text-align: left;
-  width: 50%;
-  padding: 0 2em;
-}
-.flowing > div >b{
-  display: block;
-  margin-bottom: 15px;
-  font-size: xx-large;
-}
-.flowing > img{
-  width: 50%;
+  flex: 1;
+  padding: 1em;
 }
 
+
+/*------------Aqui me quede  😀--------------------------------------*/
 .your-users{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  column-gap: 2em;
   margin: 10px;
-  padding: 2rem;
+  padding: 2rem 5px;
 }
-.your-users >img{
-  width: 50%;
-}
+
 .your-users > div{
+  flex: 1;
   text-align: left;
-  width: 50%;
   padding: 0 2em;
 }
-.your-users > div >b{
-  display: block;
-  margin-bottom: 15px;
-  font-size: xx-large;
-}
+
 
 
 .question{
@@ -192,7 +193,7 @@ footer{
     flex-direction: row;
     gap: 1rem;
 }
-.suscribe > button{
+.suscribe >div> button{
     border-radius: 5px;
 }
 
