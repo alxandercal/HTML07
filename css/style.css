@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 5px;
+}
 
 body{
     font-family: Open Sans;
@@ -96,6 +109,7 @@ button.secondary{
   align-items: center;
   justify-content: space-between;
   padding: 10px 5px;
+  margin: 5px;
   column-gap: 2em;
   
 }
@@ -116,7 +130,7 @@ button.secondary{
   align-items: center;
   column-gap: 2em;
   justify-content: space-between;
-  padding: 2rem 5px;
+  padding: 10px 5px;
   margin: 5px;
 }
 .flowing > div{
@@ -126,15 +140,14 @@ button.secondary{
 }
 
 
-/*------------Aqui me quede  😀--------------------------------------*/
 .your-users{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   column-gap: 2em;
-  margin: 10px;
-  padding: 2rem 5px;
+  margin: 5px;
+  padding: 10px 5px;
 }
 
 .your-users > div{
@@ -148,24 +161,45 @@ button.secondary{
 .question{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
 }
 .question > h1{
     display: block;
     font-size: xx-large;
     margin-bottom: 20px;
 }
-.question > button{
-    align-self: center;
-}
+
 footer{
     background-color: hsl(192, 100%, 9%);
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
+    align-content: center;
+    padding: 10px 3.5rem;
     align-items: center;
-    padding: 40px 80px;
-
+    
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    max-width: 300px;
+}
+footer > div > p{
+    text-align: justify;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 5px;
 
 }
 
@@ -173,10 +207,7 @@ footer{
     filter: brightness(0) invert(1);
     margin-bottom: 1rem;
 }
-.footer-text{
-    max-width: 400px;
-    margin-bottom: 1.5rem;
-}
+
 
 .caja-blanca {
   width: 40%;          
@@ -196,5 +227,7 @@ footer{
 .suscribe >div> button{
     border-radius: 5px;
 }
-
-
+.attribution{
+    display: flex;
+    justify-content: center;
+}
