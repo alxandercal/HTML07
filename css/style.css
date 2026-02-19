@@ -83,8 +83,9 @@ button.secondary{
 .static-card{
   width: 100%;
   display: flex;
-  justify-content:space-evenly;
-  padding: 2em;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 2em 5rem;
   
 }
 .static-card > div{
@@ -113,7 +114,7 @@ button.secondary{
   column-gap: 2em;
   
 }
-.grow div{
+.grow >div{
     text-align: left;
     flex: 1;
     padding: 10px ;
@@ -189,6 +190,7 @@ footer > div{
     align-items: left;
     justify-content: center;
     max-width: 300px;
+    margin: 2rem;
 }
 footer > div > p{
     text-align: justify;
@@ -210,18 +212,17 @@ footer > div > p{
 
 
 .caja-blanca {
-  width: 40%;          
+  width: 100%;          
   flex: 3;        
   background-color: white; 
   border-radius: .5rem;
   border: none;     
-  padding: 0 20px;  
+  padding: 1rem 20px;  
   outline: none;     
 }
 .suscribe {
     display: flex;
-    flex: 1;
-    flex-direction: row;
+    
     gap: 1rem;
 }
 .suscribe >div> button{
@@ -230,4 +231,34 @@ footer > div > p{
 .attribution{
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 768px ) {
+section{
+    margin: 5rem 0;
+}
+.static-card{
+    flex-direction: column;
+    gap: 4rem;
+}
+.grow, .flowing, .your-users{
+    flex-direction: column-reverse;    
+}
+.grow > div,.flowing > div,.your-users> div {
+    text-align: center;
+}
+.top > h1{
+    font-size: 1.6rem;
+    margin: 1rem;
+    
+}
+
+footer{
+    flex-direction: column-reverse;
+    padding: 3.5em;
+}
+.suscribe{
+    flex-direction: column;
+}
+    
 }
